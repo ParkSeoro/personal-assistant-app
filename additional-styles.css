@@ -1,0 +1,77 @@
+/* 추가 스타일 - 정적 웹사이트용 */
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    margin-left: auto;
+}
+
+.assistant-message {
+    background-color: #f1f1f1;
+    margin-right: auto;
+}
+
+.message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-time {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.calendar-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-event {
+    padding: 5px;
+    background-color: #e3f2fd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.mood-item, .insight-item {
+    margin-bottom: 10px;
+}
+
+.mood-chart {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.listening {
+    background-color: #f44336 !important;
+}
+
+/* 추가 애니메이션 효과 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.avatar-circle {
+    animation: pulse 2s infinite;
+}
+
+/* 반응형 개선 */
+@media (max-width: 480px) {
+    .app-container {
+        padding: 10px;
+    }
+    
+    .message {
+        max-width: 90%;
+    }
+}
