@@ -17,50 +17,60 @@
             <h1>쟈비스</h1>
             <p>당신만의 AI 개인 비서</p>
         </header>
-        
+
+        <section class="control-panel">
+            <div class="feature-card">
+                <h3>엔진 상태 패널</h3>
+                <div id="engine-status-list" class="engine-status-list"></div>
+            </div>
+            <div class="feature-card">
+                <h3>정책 엔진(사용자 승인)</h3>
+                <div class="policy-controls">
+                    <label><input type="checkbox" id="policy-high-risk" checked> 고위험 작업 실행 전 승인</label>
+                    <label><input type="checkbox" id="policy-auto-invest"> 자동 투자 실행 허용(기본 OFF)</label>
+                    <label><input type="checkbox" id="policy-message-sync"> 메시지/통화 데이터 분석 허용</label>
+                </div>
+            </div>
+        </section>
+
         <div class="assistant-container">
             <div class="assistant-avatar">
                 <div class="avatar-circle"></div>
             </div>
-            
+
             <div class="chat-container">
-                <div id="chat-messages" class="chat-messages">
-                    <!-- 메시지가 여기에 표시됩니다 -->
-                </div>
-                
+                <div id="chat-messages" class="chat-messages"></div>
+
                 <div class="input-container">
                     <input type="text" id="user-input" placeholder="무엇을 도와드릴까요?">
-                    <button id="voice-input-btn">
-                        <span class="mic-icon">🎤</span>
-                    </button>
+                    <button id="voice-input-btn"><span class="mic-icon">🎤</span></button>
                     <button id="send-btn">전송</button>
                 </div>
             </div>
         </div>
-        
+
         <div class="features-container">
             <div class="feature-card">
                 <h3>일정 관리</h3>
-                <div id="calendar-widget" class="widget">
-                    <!-- 캘린더 위젯 -->
-                </div>
+                <div id="calendar-widget" class="widget"></div>
             </div>
-            
+
             <div class="feature-card">
                 <h3>감정 분석</h3>
-                <div id="mood-widget" class="widget">
-                    <!-- 감정 분석 위젯 -->
-                </div>
+                <div id="mood-widget" class="widget"></div>
             </div>
-            
+
             <div class="feature-card">
                 <h3>인사이트</h3>
-                <div id="insights-widget" class="widget">
-                    <!-- 인사이트 위젯 -->
-                </div>
+                <div id="insights-widget" class="widget"></div>
+            </div>
+
+            <div class="feature-card timeline-card">
+                <h3>활동 로그 타임라인</h3>
+                <div id="activity-log" class="activity-log"></div>
             </div>
         </div>
-        
+
         <footer>
             <p>© 2025 쟈비스 AI 비서 앱 | <a href="https://github.com/yourusername/personal-assistant-app" target="_blank">GitHub</a></p>
             <p>인공지능 기반 개인 비서 앱 - 일정 관리, 감정 분석, 인사이트 제공</p>
